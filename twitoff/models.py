@@ -16,7 +16,7 @@ class User(DB.Model):
     newest_tweet_id = DB.Column(DB.BigInteger)
     
     def __repr__(self):
-        return 'User {}'.format(self.name)
+        return '[User {}]'.format(self.name)
 
 
 class Tweet(DB.Model):
